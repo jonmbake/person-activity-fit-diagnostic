@@ -1,0 +1,95 @@
+{
+  "activities": [
+    {
+      "activity_id": "graditude",
+      "activity_name": "Expressing graditude",
+      "activity_description": "Counting you blessings for what you have (either to a close other or privately, through contemplation or a journal) or conveying your gratitude and appreciation to one or more individuals whom you've never properly thanked."
+    },
+    {
+      "activity_id": "optimism",
+      "activity_name": "Cultivating optimism",
+      "activity_description": "Keeping a journal in which you imagine and write about the best possible future for yourself or practicing to look at the bright side of every situation."
+    },
+    {
+      "activity_id": "avoiding_overthinking",
+      "activity_name": "Avoiding overthinking and social comparison",
+      "activity_description": "Keeping a journal in which you imagine and write about the best possible future for yourself or practicing to look at the bright side of every situation."
+    },
+    {
+      "activity_id": "kindness",
+      "activity_name": "Practicing acts of kindness",
+      "activity_description": "Doing good things for others, whether frends or strangers, either directly or anonymously, either spontaneously or planned."
+    },
+    {
+      "activity_id": "relationships",
+      "activity_name": "Nurturing relationships",
+      "activity_description": "Picking a relationship in need of strengthening, and investing time and energy in healing, cultivating, affirming, and enjoying it."
+    },
+    {
+      "activity_id": "coping_strategies",
+      "activity_name": "Developing strategies for coping",
+      "activity_description": "Practicing ways to endure or surmount a recent stress, hardship, or trauma."
+    },
+    {
+      "activity_id": "forgiveness",
+      "activity_name": "Learning to forgive",
+      "activity_description": "Keeping a journal or writing a letter in which you work on letting go of anger and resentment toward one or more invididauls who have hurt or wronged you."
+    },
+    {
+      "activity_id": "engagement",
+      "activity_name": "Doing more activities that truly engage you",
+      "activity_description": "Increasing the number of experiences at home and work in which you \"lose\" yourself, which are challenging and absorbing (i.e. flow experiences)."
+    },
+    {
+      "activity_id": "savor",
+      "activity_name": "Savoring life's joys",
+      "activity_description": "Paying close attention, taking delight, and replaying life's momentary pleasures and wonders, through thinking, writing, drawing, or sharing with another."
+    },
+    {
+      "activity_id": "goals",
+      "activity_name": "Committing to your goals",
+      "activity_description": "Picking one, two, or three significant goals that are meaningful to you and devoting time and effort to pursuing them."
+    },
+    {
+      "activity_id": "religion",
+      "activity_name": "Practicing religion and spirituality",
+      "activity_description": "Becoming more involved in your church, temple, or mosque or reading and pondering spiritually themed books."
+    },
+    {
+      "activity_id": "body",
+      "activity_name": "Taking care of your body",
+      "activity_description": "Engaging in physical activity, meditating, and smiling and laughing."
+    }
+  ],
+  "reasons": [
+    {
+      "reason_name": "NATUAL",
+      "reason_description": "I'll keep doing this activity because it will feel \"natural\" to me and I'll be able to stick with it."
+    },
+    {
+      "reason_name": "ENJOY",
+      "reason_description": "I'll keep doing this activity because I will enjoy doing it; I'll find it to be interesting and challenging."
+    },
+    {
+      "reason_name": "VALUE",
+      "reason_description": "I'll keep doing this activity because I will value and identify with doing it; I'll do it freely even when it's not enjoyable."
+    },
+    {
+      "reason_name": "GUILTY",
+      "reason_description": "I'll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn't do it; I'll force myself."
+    },
+    {
+      "reason_name": "SITUATION",
+      "reason_description": "I'll keep doing this activity because somebody else will want me to or because my situation will force me to."
+    }
+  ],
+  "ratings": [
+    { "value": 1, "display": "1 - Not at all"},
+    { "value": 2, "display": "2"},
+    { "value": 3, "display": "3"},
+    { "value": 4, "display": "4 - Somewhat"},
+    { "value": 5, "display": "5"},
+    { "value": 6, "display": "6"},
+    { "value": 7, "display": "7 - Very much"}
+  ]
+}

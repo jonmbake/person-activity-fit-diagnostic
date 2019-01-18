@@ -1,0 +1,32 @@
+<div class="test-card card">
+  <h4 class="card-header text-white bg-primary">Person-Activity Fit Diagnostic</h4>
+  <div class="card-body">
+    <ol>
+    {{ #activities }}
+    <li>
+    <p><strong>{{ activity_name }}.</strong> {{ activity_description }}</p>
+    <form>
+      <div class="form-row">
+        {{ #reasons }}
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="{{ activity_id }}-{{ reason_name }}-value">{{ reason_name }} <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="{{ reason_description }}"></i></label>
+           <select class="{{ activity_id }}-value form-control" id="{{ activity_id }}-{{ reason_name }}-value">
+             <option></option>
+             {{ #ratings }}
+               <option value="{{ value }}">{{ display }}</option>
+             {{ /ratings }}
+           </select>
+         </div>
+        </div>
+        {{ /reasons }}
+        <div id="{{ activity_id }}-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>{{ activity_name }}</> is <strong id="{{ activity_id }}-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+     {{ /activities }}
+    </ol>
+  </div>
+</div>

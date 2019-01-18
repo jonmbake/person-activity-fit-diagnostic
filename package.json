@@ -1,0 +1,42 @@
+{
+  "name": "person-activity-fit-diagnostic",
+  "version": "1.0.0",
+  "description": "The Person-Activity Fit Diagnostic test taken from the book The How of Happiness.",
+  "main": "index.js",
+  "watch": {
+    "build:js:dev": "src/js/*.js",
+    "build:less": ["src/less/style.less"],
+    "build:html": "src/mustache/*.mustache"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf docs/*",
+    "build:js:dev": "browserify src/js/index.js -o docs/bundle.js -d -t [ babelify --presets [ @babel/preset-env ] ]",
+    "build:js": "browserify src/js/index.js -t [ babelify --presets [ @babel/preset-env ] ] | uglifyjs -m -c > docs/bundle.js",
+    "build:less": "lessc src/less/style.less docs/style.css",
+    "build:html": "mustache -p src/mustache/test.mustache -p src/mustache/instructions.mustache src/mustache/data.json src/mustache/layout.mustache docs/index.html && cp favicon.ico docs/",
+    "build": "npm run build:less && npm run build:js && npm run build:html",
+    "watch": "npm-watch",
+    "serve": "cd docs && python -m SimpleHTTPServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonmbake/person-activity-fit-diagnostic.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonmbake/person-activity-fit-diagnostic/issues"
+  },
+  "homepage": "https://github.com/jonmbake/person-activity-fit-diagnostic#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-preset-minify": "^0.5.0",
+    "babelify": "^10.0.0",
+    "less": "^3.8.1",
+    "mustache": "^3.0.1",
+    "npm-watch": "^0.5.0",
+    "uglify-js": "^3.4.9"
+  }
+}

@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Person-Activity Fit Diagnostic">
+  <link rel="icon" href="favicon.ico">
+  <title>Person-Activity Fit Diagnostic</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">Person-Activity Fit Diagnostic</a>
+  </nav>
+  <main role="main" class="container">
+    <div class="main-content">
+<p class="lead">This is the <i>Person-Activity Fit Diagnostic</i> test taken from the book <a href="'https://amazon.com/How-Happiness-Approach-Getting-Life/dp/0143114956'">The How of Happiness</a>. It's a tool to help you determine what types of activities are likely to bring you the most "happiness bang for your buck."</p>
+<div class="instructions-card card">
+  <h4 class="card-header text-white bg-info">Instructions</h4>
+  <div class="card-body">
+    <p>Consider each of the following 12 happiness activities. Reflect on what it would be like to do the activity every week for an extended period of time. Then rate each activity by filling in the appropriate number (1 to 7) for each of the following reasons: NATURAL, ENJOY, VALUE, GUILTY, and SITUATION...</p>
+    <hr/>
+    <p>People do things for many different reasons. Rate why you might keep doing this activity in terms of each of the following reasons. Use a 1 (not at all) to 7 (very much) scale.</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Reason</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NATURAL</td>
+          <td>I'll keep doing this activity because it will feel "natural" to me and I'll be able to stick with it.</td>
+        </tr>
+        <tr>
+          <td>ENJOY</td>
+          <td>I'll keep doing this activity because I will enjoy doing it; I'll find it to be interesting and challenging.</td>
+        </tr>
+        <tr>
+          <td>VALUE</td>
+          <td>I'll keep doing this activity because I will value and identify with doing it; I'll do it freely even when it's not enjoyable.</td>
+        </tr>
+        <tr>
+          <td>GUILTY</td>
+          <td>I'll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn't do it; I'll force myself.</td>
+        </tr>
+        <tr>
+          <td>SITUATION</td>
+          <td>I'll keep doing this activity because somebody else will want me to or because my situation will force me to.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The activities with the highest <i>Fit Score</i> are the ones that are most likely to bring you the most happiness. <i>Activity Fit Score</i> is cacluted with the equation:</p>
+    <pre>FIT SCORE = (NATURAL + ENJOY + VALUE) / 3 - (GUILTY + SITUATION) / 2</pre>
+  </div>
+</div>
+<div class="test-card card">
+  <h4 class="card-header text-white bg-primary">Person-Activity Fit Diagnostic</h4>
+  <div class="card-body">
+    <ol>
+    <li>
+    <p><strong>Expressing graditude.</strong> Counting you blessings for what you have (either to a close other or privately, through contemplation or a journal) or conveying your gratitude and appreciation to one or more individuals whom you&#39;ve never properly thanked.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="graditude-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="graditude-value form-control" id="graditude-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="graditude-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="graditude-value form-control" id="graditude-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="graditude-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="graditude-value form-control" id="graditude-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="graditude-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="graditude-value form-control" id="graditude-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="graditude-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="graditude-value form-control" id="graditude-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="graditude-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Expressing graditude</> is <strong id="graditude-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Cultivating optimism.</strong> Keeping a journal in which you imagine and write about the best possible future for yourself or practicing to look at the bright side of every situation.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="optimism-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="optimism-value form-control" id="optimism-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="optimism-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="optimism-value form-control" id="optimism-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="optimism-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="optimism-value form-control" id="optimism-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="optimism-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="optimism-value form-control" id="optimism-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="optimism-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="optimism-value form-control" id="optimism-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="optimism-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Cultivating optimism</> is <strong id="optimism-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Avoiding overthinking and social comparison.</strong> Keeping a journal in which you imagine and write about the best possible future for yourself or practicing to look at the bright side of every situation.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="avoiding_overthinking-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="avoiding_overthinking-value form-control" id="avoiding_overthinking-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="avoiding_overthinking-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="avoiding_overthinking-value form-control" id="avoiding_overthinking-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="avoiding_overthinking-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="avoiding_overthinking-value form-control" id="avoiding_overthinking-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="avoiding_overthinking-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="avoiding_overthinking-value form-control" id="avoiding_overthinking-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="avoiding_overthinking-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="avoiding_overthinking-value form-control" id="avoiding_overthinking-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="avoiding_overthinking-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Avoiding overthinking and social comparison</> is <strong id="avoiding_overthinking-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Practicing acts of kindness.</strong> Doing good things for others, whether frends or strangers, either directly or anonymously, either spontaneously or planned.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="kindness-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="kindness-value form-control" id="kindness-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="kindness-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="kindness-value form-control" id="kindness-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="kindness-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="kindness-value form-control" id="kindness-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="kindness-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="kindness-value form-control" id="kindness-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="kindness-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="kindness-value form-control" id="kindness-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="kindness-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Practicing acts of kindness</> is <strong id="kindness-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Nurturing relationships.</strong> Picking a relationship in need of strengthening, and investing time and energy in healing, cultivating, affirming, and enjoying it.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="relationships-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="relationships-value form-control" id="relationships-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="relationships-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="relationships-value form-control" id="relationships-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="relationships-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="relationships-value form-control" id="relationships-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="relationships-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="relationships-value form-control" id="relationships-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="relationships-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="relationships-value form-control" id="relationships-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="relationships-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Nurturing relationships</> is <strong id="relationships-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Developing strategies for coping.</strong> Practicing ways to endure or surmount a recent stress, hardship, or trauma.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="coping_strategies-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="coping_strategies-value form-control" id="coping_strategies-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="coping_strategies-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="coping_strategies-value form-control" id="coping_strategies-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="coping_strategies-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="coping_strategies-value form-control" id="coping_strategies-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="coping_strategies-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="coping_strategies-value form-control" id="coping_strategies-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="coping_strategies-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="coping_strategies-value form-control" id="coping_strategies-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="coping_strategies-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Developing strategies for coping</> is <strong id="coping_strategies-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Learning to forgive.</strong> Keeping a journal or writing a letter in which you work on letting go of anger and resentment toward one or more invididauls who have hurt or wronged you.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="forgiveness-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="forgiveness-value form-control" id="forgiveness-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="forgiveness-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="forgiveness-value form-control" id="forgiveness-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="forgiveness-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="forgiveness-value form-control" id="forgiveness-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="forgiveness-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="forgiveness-value form-control" id="forgiveness-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="forgiveness-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="forgiveness-value form-control" id="forgiveness-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="forgiveness-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Learning to forgive</> is <strong id="forgiveness-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Doing more activities that truly engage you.</strong> Increasing the number of experiences at home and work in which you &quot;lose&quot; yourself, which are challenging and absorbing (i.e. flow experiences).</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="engagement-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="engagement-value form-control" id="engagement-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="engagement-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="engagement-value form-control" id="engagement-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="engagement-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="engagement-value form-control" id="engagement-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="engagement-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="engagement-value form-control" id="engagement-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="engagement-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="engagement-value form-control" id="engagement-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="engagement-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Doing more activities that truly engage you</> is <strong id="engagement-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Savoring life&#39;s joys.</strong> Paying close attention, taking delight, and replaying life&#39;s momentary pleasures and wonders, through thinking, writing, drawing, or sharing with another.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="savor-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="savor-value form-control" id="savor-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="savor-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="savor-value form-control" id="savor-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="savor-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="savor-value form-control" id="savor-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="savor-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="savor-value form-control" id="savor-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="savor-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="savor-value form-control" id="savor-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="savor-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Savoring life&#39;s joys</> is <strong id="savor-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Committing to your goals.</strong> Picking one, two, or three significant goals that are meaningful to you and devoting time and effort to pursuing them.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="goals-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="goals-value form-control" id="goals-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="goals-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="goals-value form-control" id="goals-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="goals-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="goals-value form-control" id="goals-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="goals-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="goals-value form-control" id="goals-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="goals-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="goals-value form-control" id="goals-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="goals-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Committing to your goals</> is <strong id="goals-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Practicing religion and spirituality.</strong> Becoming more involved in your church, temple, or mosque or reading and pondering spiritually themed books.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="religion-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="religion-value form-control" id="religion-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="religion-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="religion-value form-control" id="religion-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="religion-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="religion-value form-control" id="religion-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="religion-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="religion-value form-control" id="religion-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="religion-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="religion-value form-control" id="religion-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="religion-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Practicing religion and spirituality</> is <strong id="religion-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    <li>
+    <p><strong>Taking care of your body.</strong> Engaging in physical activity, meditating, and smiling and laughing.</p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="body-NATUAL-value">NATUAL <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because it will feel &quot;natural&quot; to me and I&#39;ll be able to stick with it."></i></label>
+           <select class="body-value form-control" id="body-NATUAL-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="body-ENJOY-value">ENJOY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will enjoy doing it; I&#39;ll find it to be interesting and challenging."></i></label>
+           <select class="body-value form-control" id="body-ENJOY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="body-VALUE-value">VALUE <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I will value and identify with doing it; I&#39;ll do it freely even when it&#39;s not enjoyable."></i></label>
+           <select class="body-value form-control" id="body-VALUE-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="body-GUILTY-value">GUILTY <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because I would feel ashamed, guilty, or anxious if I didn&#39;t do it; I&#39;ll force myself."></i></label>
+           <select class="body-value form-control" id="body-GUILTY-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div class="form-group col-md-2">
+          <div class="form-group">
+           <label class="reason-label" for="body-SITUATION-value">SITUATION <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="I&#39;ll keep doing this activity because somebody else will want me to or because my situation will force me to."></i></label>
+           <select class="body-value form-control" id="body-SITUATION-value">
+             <option></option>
+               <option value="1">1 - Not at all</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4 - Somewhat</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7 - Very much</option>
+           </select>
+         </div>
+        </div>
+        <div id="body-score-alert" class="d-none alert alert-info" role="alert">
+          Your <i>Fit Score</i> for <i>Taking care of your body</> is <strong id="body-score"></strong>
+        </div>
+      </div>
+    </form>
+    </li>
+    </ol>
+  </div>
+</div>
+    </div><!-- /.main-content -->
+  </main><!-- /.container -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
