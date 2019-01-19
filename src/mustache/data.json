@@ -1,8 +1,8 @@
 {
   "activities": [
     {
-      "activity_id": "graditude",
-      "activity_name": "Expressing graditude",
+      "activity_id": "gratitude",
+      "activity_name": "Expressing gratitude",
       "activity_description": "Counting you blessings for what you have (either to a close other or privately, through contemplation or a journal) or conveying your gratitude and appreciation to one or more individuals whom you've never properly thanked."
     },
     {
@@ -18,7 +18,7 @@
     {
       "activity_id": "kindness",
       "activity_name": "Practicing acts of kindness",
-      "activity_description": "Doing good things for others, whether frends or strangers, either directly or anonymously, either spontaneously or planned."
+      "activity_description": "Doing good things for others, whether friends or strangers, either directly or anonymously, either spontaneously or planned."
     },
     {
       "activity_id": "relationships",
@@ -33,7 +33,7 @@
     {
       "activity_id": "forgiveness",
       "activity_name": "Learning to forgive",
-      "activity_description": "Keeping a journal or writing a letter in which you work on letting go of anger and resentment toward one or more invididauls who have hurt or wronged you."
+      "activity_description": "Keeping a journal or writing a letter in which you work on letting go of anger and resentment toward one or more individuals who have hurt or wronged you."
     },
     {
       "activity_id": "engagement",
