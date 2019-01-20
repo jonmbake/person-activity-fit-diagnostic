@@ -18,7 +18,7 @@
     <div class="main-content">
 <p class="lead">This is the <i>Person-Activity Fit Diagnostic</i> test taken from the book <a target="_blank" href="https://amazon.com/How-Happiness-Approach-Getting-Life/dp/0143114956">The How of Happiness</a>.</p>
 <p class="lead">It's a tool to help you determine what types of activities are likely to bring you the most "happiness bang for your buck."</p>
-<div class="instructions-card card">
+<div class="instructions-card card mb-3">
   <h4 class="card-header text-white bg-info">Instructions</h4>
   <div class="card-body">
     <p>Consider each of the following 12 happiness activities. Reflect on what it would be like to do the activity every week for an extended period of time. Then rate each activity by filling in the appropriate number (1 to 7) for each of the following reasons: NATURAL, ENJOY, VALUE, GUILTY, and SITUATION...</p>
@@ -58,7 +58,7 @@
     <pre>FIT SCORE = (NATURAL + ENJOY + VALUE) / 3 - (GUILTY + SITUATION) / 2</pre>
   </div>
 </div>
-<div class="test-card card">
+<div class="test-card card mb-3">
   <h4 class="card-header text-white bg-primary">Person-Activity Fit Diagnostic</h4>
   <div class="card-body">
     <ol>
@@ -1082,6 +1082,15 @@
       </div>
     </form>
     </li>
+    </ol>
+  </div>
+</div>
+<div id="results-card" class="card">
+  <h4 class="card-header text-white bg-success">Best-Fitting Activities</h4>
+  <div class="card-body">
+    <p>These are the top four activities most likely to increase your happiness.</p>
+    <p><em>Note:</em> These will get populated as you fill in the ratings above.</p>
+    <ol id="results-list">
     </ol>
   </div>
 </div>

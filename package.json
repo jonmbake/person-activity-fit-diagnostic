@@ -14,7 +14,7 @@
     "build:js:dev": "browserify src/js/index.js -o docs/bundle.js -d -t [ babelify --presets [ @babel/preset-env ] ]",
     "build:js": "browserify src/js/index.js -t [ babelify --presets [ @babel/preset-env ] ] | uglifyjs -m -c > docs/bundle.js",
     "build:less": "lessc src/less/style.less docs/style.css",
-    "build:html": "mustache -p src/mustache/test.mustache -p src/mustache/instructions.mustache src/mustache/data.json src/mustache/layout.mustache docs/index.html && cp favicon.ico docs/",
+    "build:html": "mustache -p src/mustache/test.mustache -p src/mustache/instructions.mustache  -p src/mustache/results.mustache src/mustache/data.json src/mustache/layout.mustache docs/index.html && cp favicon.ico docs/",
     "build": "npm run build:less && npm run build:js && npm run build:html",
     "watch": "npm-watch",
     "serve": "cd docs && python -m SimpleHTTPServer"
