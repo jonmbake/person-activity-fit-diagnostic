@@ -12,3 +12,10 @@ Pull requests are welcome. To build the code, run:
 npm install
 npm run build
 ```
+## License
+
+MIT
+
+-----
+
+The How of Happiness book is &copy; The Penguin Press 2008 - Sonja Lyubomirsky
