@@ -12,7 +12,7 @@
           <div class="form-group">
            <label class="reason-label" for="{{ activity_id }}-{{ reason_name }}-value">{{ reason_name }} <i class="reason-info fa fa-info-circle" data-toggle="tooltip" data-placement="bottom" title="{{ reason_description }}"></i></label>
            <select class="{{ activity_id }}-value form-control" id="{{ activity_id }}-{{ reason_name }}-value">
-             <option></option>
+             <option value="">&nbsp;</option>
              {{ #ratings }}
                <option value="{{ value }}">{{ display }}</option>
              {{ /ratings }}
@@ -21,7 +21,7 @@
         </div>
         {{ /reasons }}
         <div id="{{ activity_id }}-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>{{ activity_name }}</> is <strong id="{{ activity_id }}-score"></strong>
+          Your <i>Fit Score</i> for <i>{{ activity_name }}</i> is <strong id="{{ activity_id }}-score"></strong>
         </div>
       </div>
     </form>
