@@ -1,5 +1,5 @@
 <div class="test-card card mb-3">
-  <h4 class="card-header text-white bg-primary">Person-Activity Fit Diagnostic</h4>
+  <h4 class="card-header text-white bg-primary">Rate Each Activity</h4>
   <div class="card-body">
     <ol>
     {{ #activities }}
@@ -21,7 +21,7 @@
         </div>
         {{ /reasons }}
         <div id="{{ activity_id }}-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>{{ activity_name }}</i> is <strong id="{{ activity_id }}-score"></strong>
+          Your <i>Fit Score</i> for <i>{{ activity_name }}</i> is <span class="activity-score" id="{{ activity_id }}-score"></span>
         </div>
       </div>
     </form>

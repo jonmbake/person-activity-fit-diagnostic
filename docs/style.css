@@ -4,12 +4,12 @@ body {
 .main-content {
   padding: 3rem 1.5rem;
 }
-h1 {
-  text-align: center;
-}
 .reason-info:hover {
   cursor: pointer;
 }
 .reason-label {
   white-space: nowrap;
+}
+.activity-score {
+  font-weight: 700;
 }

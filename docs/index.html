@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Person-Activity Fit Diagnostic">
+  <meta name="keywords" content="person, activity, fit, diagnostic, happiness, test">
   <link rel="icon" href="favicon.ico">
   <title>Person-Activity Fit Diagnostic</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,10 +13,11 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/">Person-Activity Fit Diagnostic</a>
+    <a class="navbar-brand" href="/">Path to Happier</a>
   </nav>
   <main class="container">
     <div class="main-content">
+      <h1>Person-Activity Fit Diagnostic</h1>
 <p class="lead">This is the <i>Person-Activity Fit Diagnostic</i> test taken from the book <a target="_blank" href="https://amazon.com/How-Happiness-Approach-Getting-Life/dp/0143114956">The How of Happiness</a>.</p>
 <p class="lead">It's a tool to help you determine what types of activities are likely to bring you the most "happiness bang for your buck."</p>
 <div class="instructions-card card mb-3">
@@ -59,7 +61,7 @@
   </div>
 </div>
 <div class="test-card card mb-3">
-  <h4 class="card-header text-white bg-primary">Person-Activity Fit Diagnostic</h4>
+  <h4 class="card-header text-white bg-primary">Rate Each Activity</h4>
   <div class="card-body">
     <ol>
     <li>
@@ -142,7 +144,7 @@
          </div>
         </div>
         <div id="gratitude-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Expressing gratitude</i> is <strong id="gratitude-score"></strong>
+          Your <i>Fit Score</i> for <i>Expressing gratitude</i> is <span class="activity-score" id="gratitude-score"></span>
         </div>
       </div>
     </form>
@@ -227,7 +229,7 @@
          </div>
         </div>
         <div id="optimism-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Cultivating optimism</i> is <strong id="optimism-score"></strong>
+          Your <i>Fit Score</i> for <i>Cultivating optimism</i> is <span class="activity-score" id="optimism-score"></span>
         </div>
       </div>
     </form>
@@ -312,7 +314,7 @@
          </div>
         </div>
         <div id="avoiding_overthinking-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Avoiding overthinking and social comparison</i> is <strong id="avoiding_overthinking-score"></strong>
+          Your <i>Fit Score</i> for <i>Avoiding overthinking and social comparison</i> is <span class="activity-score" id="avoiding_overthinking-score"></span>
         </div>
       </div>
     </form>
@@ -397,7 +399,7 @@
          </div>
         </div>
         <div id="kindness-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Practicing acts of kindness</i> is <strong id="kindness-score"></strong>
+          Your <i>Fit Score</i> for <i>Practicing acts of kindness</i> is <span class="activity-score" id="kindness-score"></span>
         </div>
       </div>
     </form>
@@ -482,7 +484,7 @@
          </div>
         </div>
         <div id="relationships-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Nurturing relationships</i> is <strong id="relationships-score"></strong>
+          Your <i>Fit Score</i> for <i>Nurturing relationships</i> is <span class="activity-score" id="relationships-score"></span>
         </div>
       </div>
     </form>
@@ -567,7 +569,7 @@
          </div>
         </div>
         <div id="coping_strategies-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Developing strategies for coping</i> is <strong id="coping_strategies-score"></strong>
+          Your <i>Fit Score</i> for <i>Developing strategies for coping</i> is <span class="activity-score" id="coping_strategies-score"></span>
         </div>
       </div>
     </form>
@@ -652,7 +654,7 @@
          </div>
         </div>
         <div id="forgiveness-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Learning to forgive</i> is <strong id="forgiveness-score"></strong>
+          Your <i>Fit Score</i> for <i>Learning to forgive</i> is <span class="activity-score" id="forgiveness-score"></span>
         </div>
       </div>
     </form>
@@ -737,7 +739,7 @@
          </div>
         </div>
         <div id="engagement-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Doing more activities that truly engage you</i> is <strong id="engagement-score"></strong>
+          Your <i>Fit Score</i> for <i>Doing more activities that truly engage you</i> is <span class="activity-score" id="engagement-score"></span>
         </div>
       </div>
     </form>
@@ -822,7 +824,7 @@
          </div>
         </div>
         <div id="savor-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Savoring life&#39;s joys</i> is <strong id="savor-score"></strong>
+          Your <i>Fit Score</i> for <i>Savoring life&#39;s joys</i> is <span class="activity-score" id="savor-score"></span>
         </div>
       </div>
     </form>
@@ -907,7 +909,7 @@
          </div>
         </div>
         <div id="goals-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Committing to your goals</i> is <strong id="goals-score"></strong>
+          Your <i>Fit Score</i> for <i>Committing to your goals</i> is <span class="activity-score" id="goals-score"></span>
         </div>
       </div>
     </form>
@@ -992,7 +994,7 @@
          </div>
         </div>
         <div id="religion-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Practicing religion and spirituality</i> is <strong id="religion-score"></strong>
+          Your <i>Fit Score</i> for <i>Practicing religion and spirituality</i> is <span class="activity-score" id="religion-score"></span>
         </div>
       </div>
     </form>
@@ -1077,7 +1079,7 @@
          </div>
         </div>
         <div id="body-score-alert" class="d-none alert alert-info" role="alert">
-          Your <i>Fit Score</i> for <i>Taking care of your body</i> is <strong id="body-score"></strong>
+          Your <i>Fit Score</i> for <i>Taking care of your body</i> is <span class="activity-score" id="body-score"></span>
         </div>
       </div>
     </form>
