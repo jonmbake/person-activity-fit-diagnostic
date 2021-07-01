@@ -2,7 +2,7 @@ body {
   padding-top: 5rem;
 }
 .main-content {
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 .reason-info:hover {
   cursor: pointer;
@@ -33,4 +33,31 @@ body {
 }
 .bd-footer-links li + li {
   margin-left: 1rem;
+}
+.social-share {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+.social-share a {
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fafafa;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0 6px 3px;
+  text-align: center;
+  text-decoration: none;
+}
+.social-share a.fb-share {
+  background: #3B5997;
+}
+.social-share a.twitter-share {
+  background: #00aced;
+}
+.social-share a.email-share {
+  background: #2c4762;
+}
+.social-share a.github-share {
+  background: #4078c0;
 }
